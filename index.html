@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-<title>Your RollNumber </title>
+	<title>Home Work-4</title>
 </head>
+         <h1>CHECK OUT</h1>
 <body>
-<header class="container-fluid">
-    <div class="jumbotron">
-        <h1 class="text-center"> 181380004 - RabiaSajjad </h1>
-    </div>
-</header>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-sm-6">
-            <input type="text" id="inviteeName" class="form-control">
-            <input type="button" value="Invite" class="btn btn-info mt-4">
-        </div>
-    </div>
-    <div class="row mt-3" id="inviteesDiv">
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Invitee Name</h2>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-success">Confirm</button>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
+	<a href="#">Have a coupoun?Click here to enter yoour code</a>
+	<fieldset>
+		<legend>Billing Details</legend>
+		<form method="POST">
+			<label><b>First Name:</b></label><br>
+			<input type="text" name="First Name" placeholder="Enter your first name" required="" maxlength="20">
+            <br>
+            <label><b>Last Name:</b></label><br>
+			<input type="text" name="Last Name" placeholder="Enter your last name" required="" maxlength="20">
+            <br>
+            <label><b>Company Name:</b></label><br>
+			<input type="text" name="Company Name" required="" maxlength="20">
+            <br>
+            <label><b>Province</b></label><br>
+            <select>
+            	<option>Punjab</option>
+            	<option>Sindh</option>
+            	<option>KPK</option>
+            	<option>Balochistan</option>
+            </select>
+            <br>
+            <label><b>Address</b></label><br>
+            <input type="text" name="Address" placeholder="Street Address">
+            <br>
+            <label><b>Town/City</b></label><br>
+            <input type="text" name="town" placeholder="Enter your town/city">
+            <br>
+            <label><b>Postal Code</b></label><br>
+            <input type="tel" name="Postal code" placeholder="e.g 5670">
+            <br>
+            <label><b>Phone</b></label>
+            <input type="tel" name="Phone" placeholder="Enter yout phone number">
+            <br>
+            <label><b>Email</b></label><br>
+            <input type="email" name="email" placeholder="e.g abc@outlook.com">
+            <br>
+            <label><b>Additional Information</b></label><br>
+            <label><b>Order Info</b></label><br>
+            <textarea name="Order Info" rows="10" columns="30">e.g Special Notes for delivery
+            </textarea>
+            <br>
+            <input type="radio" name="Cash" id="Cash" value="Cash on delivery">
+            <label><b>Cash on Delivery</b></label>
+            <br>
+            <input type="radio" name="Credit" id="Credit" value="Credit">
+            <label><b>Credit Card(stripe)</b></label>
+            <br>
+            <input type="submit" name="submit" value="Place Order">                       
+		</form>
+	</fieldset>
+	
+
+
 </body>
 </html>
